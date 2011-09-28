@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		374BE77E145069AE00DEFF84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374BE77D145069AE00DEFF84 /* UIKit.framework */; };
+		374BE780145069AE00DEFF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374BE77F145069AE00DEFF84 /* Foundation.framework */; };
+		374BE782145069AE00DEFF84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374BE781145069AE00DEFF84 /* CoreGraphics.framework */; };
+		377C8D3C145765080039A6B5 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D2D145765080039A6B5 /* NSString+HTML.m */; };
+		377C8D3D145765080039A6B5 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D2F145765080039A6B5 /* NSDate+InternetDateTime.m */; };
+		377C8D3E145765080039A6B5 /* MWFeedParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D31145765080039A6B5 /* MWFeedParserAppDelegate.m */; };
+		377C8D3F145765080039A6B5 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D33145765080039A6B5 /* MWFeedParser.m */; };
+		377C8D40145765080039A6B5 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D36145765080039A6B5 /* MWFeedItem.m */; };
+		377C8D41145765080039A6B5 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D38145765080039A6B5 /* MWFeedInfo.m */; };
+		377C8D42145765080039A6B5 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D3A145765080039A6B5 /* GTMNSString+HTML.m */; };
+		377C8D4C1457ACE00039A6B5 /* StoryViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C8D4A1457ACE00039A6B5 /* StoryViewController_iPhone.m */; };
+		377C8D4D1457ACE00039A6B5 /* StoryViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377C8D4B1457ACE00039A6B5 /* StoryViewController_iPhone.xib */; };
+		37DAB6781457374D00E13008 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6621457374D00E13008 /* AddViewController.m */; };
+		37DAB6791457374D00E13008 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6631457374D00E13008 /* AddViewController.xib */; };
+		37DAB67A1457374D00E13008 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6651457374D00E13008 /* AppDelegate.m */; };
+		37DAB67B1457374D00E13008 /* DetailViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6671457374D00E13008 /* DetailViewController_iPad.m */; };
+		37DAB67C1457374D00E13008 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6681457374D00E13008 /* DetailViewController_iPad.xib */; };
+		37DAB6831457374D00E13008 /* MasterViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6741457374D00E13008 /* MasterViewController_iPad.m */; };
+		37DAB6841457374D00E13008 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6751457374D00E13008 /* MasterViewController_iPad.xib */; };
+		37DAB6D314575AAB00E13008 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6CF14575AAB00E13008 /* main.m */; };
+		37DAB6D414575AAB00E13008 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6D014575AAB00E13008 /* README.markdown */; };
+		37DAB6D514575AAB00E13008 /* SkeletonRSS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6D114575AAB00E13008 /* SkeletonRSS-Info.plist */; };
+		37DAB6DA14575BF000E13008 /* FeedMasterViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAB6D814575BF000E13008 /* FeedMasterViewController_iPhone.m */; };
+		37DAB6DB14575BF000E13008 /* FeedMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37DAB6D914575BF000E13008 /* FeedMasterViewController_iPhone.xib */; };
+		37FEE78F1457CA1400A0DFE5 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEE78E1457CA1400A0DFE5 /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		374BE779145069AE00DEFF84 /* SkeletonRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		374BE77D145069AE00DEFF84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		374BE77F145069AE00DEFF84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		374BE781145069AE00DEFF84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		377C8D2D145765080039A6B5 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Externals/MWFeedParser/Classes/NSString+HTML.m"; sourceTree = SOURCE_ROOT; };
+		377C8D2E145765080039A6B5 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Externals/MWFeedParser/Classes/NSString+HTML.h"; sourceTree = SOURCE_ROOT; };
+		377C8D2F145765080039A6B5 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "Externals/MWFeedParser/Classes/NSDate+InternetDateTime.m"; sourceTree = SOURCE_ROOT; };
+		377C8D30145765080039A6B5 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "Externals/MWFeedParser/Classes/NSDate+InternetDateTime.h"; sourceTree = SOURCE_ROOT; };
+		377C8D31145765080039A6B5 /* MWFeedParserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWFeedParserAppDelegate.m; path = Externals/MWFeedParser/Classes/MWFeedParserAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		377C8D32145765080039A6B5 /* MWFeedParserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWFeedParserAppDelegate.h; path = Externals/MWFeedParser/Classes/MWFeedParserAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		377C8D33145765080039A6B5 /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWFeedParser.m; path = Externals/MWFeedParser/Classes/MWFeedParser.m; sourceTree = SOURCE_ROOT; };
+		377C8D34145765080039A6B5 /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWFeedParser.h; path = Externals/MWFeedParser/Classes/MWFeedParser.h; sourceTree = SOURCE_ROOT; };
+		377C8D35145765080039A6B5 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWFeedParser_Private.h; path = Externals/MWFeedParser/Classes/MWFeedParser_Private.h; sourceTree = SOURCE_ROOT; };
+		377C8D36145765080039A6B5 /* MWFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWFeedItem.m; path = Externals/MWFeedParser/Classes/MWFeedItem.m; sourceTree = SOURCE_ROOT; };
+		377C8D37145765080039A6B5 /* MWFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWFeedItem.h; path = Externals/MWFeedParser/Classes/MWFeedItem.h; sourceTree = SOURCE_ROOT; };
+		377C8D38145765080039A6B5 /* MWFeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWFeedInfo.m; path = Externals/MWFeedParser/Classes/MWFeedInfo.m; sourceTree = SOURCE_ROOT; };
+		377C8D39145765080039A6B5 /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWFeedInfo.h; path = Externals/MWFeedParser/Classes/MWFeedInfo.h; sourceTree = SOURCE_ROOT; };
+		377C8D3A145765080039A6B5 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Externals/MWFeedParser/Classes/GTMNSString+HTML.m"; sourceTree = SOURCE_ROOT; };
+		377C8D3B145765080039A6B5 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Externals/MWFeedParser/Classes/GTMNSString+HTML.h"; sourceTree = SOURCE_ROOT; };
+		377C8D491457ACE00039A6B5 /* StoryViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController_iPhone.h; sourceTree = "<group>"; };
+		377C8D4A1457ACE00039A6B5 /* StoryViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController_iPhone.m; sourceTree = "<group>"; };
+		377C8D4B1457ACE00039A6B5 /* StoryViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController_iPhone.xib; sourceTree = "<group>"; };
+		37DAB6611457374D00E13008 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		37DAB6621457374D00E13008 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		37DAB6631457374D00E13008 /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		37DAB6641457374D00E13008 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37DAB6651457374D00E13008 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37DAB6661457374D00E13008 /* DetailViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController_iPad.h; sourceTree = "<group>"; };
+		37DAB6671457374D00E13008 /* DetailViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController_iPad.m; sourceTree = "<group>"; };
+		37DAB6681457374D00E13008 /* DetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		37DAB6721457374D00E13008 /* MasterDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterDetailDelegate.h; sourceTree = "<group>"; };
+		37DAB6731457374D00E13008 /* MasterViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController_iPad.h; sourceTree = "<group>"; };
+		37DAB6741457374D00E13008 /* MasterViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController_iPad.m; sourceTree = "<group>"; };
+		37DAB6751457374D00E13008 /* MasterViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		37DAB6CF14575AAB00E13008 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37DAB6D014575AAB00E13008 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = Classes/README.markdown; sourceTree = "<group>"; };
+		37DAB6D114575AAB00E13008 /* SkeletonRSS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SkeletonRSS-Info.plist"; sourceTree = "<group>"; };
+		37DAB6D214575AAB00E13008 /* SkeletonRSS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkeletonRSS-Prefix.pch"; sourceTree = "<group>"; };
+		37DAB6D714575BF000E13008 /* FeedMasterViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedMasterViewController_iPhone.h; sourceTree = "<group>"; };
+		37DAB6D814575BF000E13008 /* FeedMasterViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedMasterViewController_iPhone.m; sourceTree = "<group>"; };
+		37DAB6D914575BF000E13008 /* FeedMasterViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		37FEE78E1457CA1400A0DFE5 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		374BE776145069AE00DEFF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FEE78F1457CA1400A0DFE5 /* Twitter.framework in Frameworks */,
+				374BE77E145069AE00DEFF84 /* UIKit.framework in Frameworks */,
+				374BE780145069AE00DEFF84 /* Foundation.framework in Frameworks */,
+				374BE782145069AE00DEFF84 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		374BE76E145069AD00DEFF84 = {
+			isa = PBXGroup;
+			children = (
+				37DAB6D014575AAB00E13008 /* README.markdown */,
+				37DAB6601457374D00E13008 /* Classes */,
+				37DAB6C31457595B00E13008 /* Supporting Files */,
+				374BE77C145069AE00DEFF84 /* Frameworks */,
+				374BE77A145069AE00DEFF84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		374BE77A145069AE00DEFF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				374BE779145069AE00DEFF84 /* SkeletonRSS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		374BE77C145069AE00DEFF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FEE78E1457CA1400A0DFE5 /* Twitter.framework */,
+				374BE77D145069AE00DEFF84 /* UIKit.framework */,
+				374BE77F145069AE00DEFF84 /* Foundation.framework */,
+				374BE781145069AE00DEFF84 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		377C8D43145765100039A6B5 /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				377C8D2D145765080039A6B5 /* NSString+HTML.m */,
+				377C8D2E145765080039A6B5 /* NSString+HTML.h */,
+				377C8D2F145765080039A6B5 /* NSDate+InternetDateTime.m */,
+				377C8D30145765080039A6B5 /* NSDate+InternetDateTime.h */,
+				377C8D31145765080039A6B5 /* MWFeedParserAppDelegate.m */,
+				377C8D32145765080039A6B5 /* MWFeedParserAppDelegate.h */,
+				377C8D33145765080039A6B5 /* MWFeedParser.m */,
+				377C8D34145765080039A6B5 /* MWFeedParser.h */,
+				377C8D35145765080039A6B5 /* MWFeedParser_Private.h */,
+				377C8D36145765080039A6B5 /* MWFeedItem.m */,
+				377C8D37145765080039A6B5 /* MWFeedItem.h */,
+				377C8D38145765080039A6B5 /* MWFeedInfo.m */,
+				377C8D39145765080039A6B5 /* MWFeedInfo.h */,
+				377C8D3A145765080039A6B5 /* GTMNSString+HTML.m */,
+				377C8D3B145765080039A6B5 /* GTMNSString+HTML.h */,
+			);
+			name = MWFeedParser;
+			sourceTree = "<group>";
+		};
+		37DAB6601457374D00E13008 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37DAB6641457374D00E13008 /* AppDelegate.h */,
+				37DAB6651457374D00E13008 /* AppDelegate.m */,
+				37DAB6D614575AC500E13008 /* iPhone */,
+				37DAB6C9145759B500E13008 /* iPad */,
+				37DAB6E8145760C100E13008 /* Externals */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		37DAB6C31457595B00E13008 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37DAB6CF14575AAB00E13008 /* main.m */,
+				37DAB6D114575AAB00E13008 /* SkeletonRSS-Info.plist */,
+				37DAB6D214575AAB00E13008 /* SkeletonRSS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		37DAB6C9145759B500E13008 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				37DAB6611457374D00E13008 /* AddViewController.h */,
+				37DAB6621457374D00E13008 /* AddViewController.m */,
+				37DAB6631457374D00E13008 /* AddViewController.xib */,
+				37DAB6721457374D00E13008 /* MasterDetailDelegate.h */,
+				37DAB6661457374D00E13008 /* DetailViewController_iPad.h */,
+				37DAB6671457374D00E13008 /* DetailViewController_iPad.m */,
+				37DAB6681457374D00E13008 /* DetailViewController_iPad.xib */,
+				37DAB6731457374D00E13008 /* MasterViewController_iPad.h */,
+				37DAB6741457374D00E13008 /* MasterViewController_iPad.m */,
+				37DAB6751457374D00E13008 /* MasterViewController_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		37DAB6D614575AC500E13008 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				37DAB6D714575BF000E13008 /* FeedMasterViewController_iPhone.h */,
+				37DAB6D814575BF000E13008 /* FeedMasterViewController_iPhone.m */,
+				37DAB6D914575BF000E13008 /* FeedMasterViewController_iPhone.xib */,
+				377C8D491457ACE00039A6B5 /* StoryViewController_iPhone.h */,
+				377C8D4A1457ACE00039A6B5 /* StoryViewController_iPhone.m */,
+				377C8D4B1457ACE00039A6B5 /* StoryViewController_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		37DAB6E8145760C100E13008 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				377C8D43145765100039A6B5 /* MWFeedParser */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		374BE778145069AE00DEFF84 /* SkeletonRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 374BE791145069AE00DEFF84 /* Build configuration list for PBXNativeTarget "SkeletonRSS" */;
+			buildPhases = (
+				374BE775145069AE00DEFF84 /* Sources */,
+				374BE776145069AE00DEFF84 /* Frameworks */,
+				374BE777145069AE00DEFF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkeletonRSS;
+			productName = "Lecture 4 - Demonstration";
+			productReference = 374BE779145069AE00DEFF84 /* SkeletonRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		374BE770145069AD00DEFF84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 374BE773145069AD00DEFF84 /* Build configuration list for PBXProject "SkeletonRSS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 374BE76E145069AD00DEFF84;
+			productRefGroup = 374BE77A145069AE00DEFF84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				374BE778145069AE00DEFF84 /* SkeletonRSS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		374BE777145069AE00DEFF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DAB6791457374D00E13008 /* AddViewController.xib in Resources */,
+				37DAB67C1457374D00E13008 /* DetailViewController_iPad.xib in Resources */,
+				37DAB6841457374D00E13008 /* MasterViewController_iPad.xib in Resources */,
+				37DAB6D414575AAB00E13008 /* README.markdown in Resources */,
+				37DAB6D514575AAB00E13008 /* SkeletonRSS-Info.plist in Resources */,
+				37DAB6DB14575BF000E13008 /* FeedMasterViewController_iPhone.xib in Resources */,
+				377C8D4D1457ACE00039A6B5 /* StoryViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		374BE775145069AE00DEFF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DAB6781457374D00E13008 /* AddViewController.m in Sources */,
+				37DAB67A1457374D00E13008 /* AppDelegate.m in Sources */,
+				37DAB67B1457374D00E13008 /* DetailViewController_iPad.m in Sources */,
+				37DAB6831457374D00E13008 /* MasterViewController_iPad.m in Sources */,
+				37DAB6D314575AAB00E13008 /* main.m in Sources */,
+				37DAB6DA14575BF000E13008 /* FeedMasterViewController_iPhone.m in Sources */,
+				377C8D3C145765080039A6B5 /* NSString+HTML.m in Sources */,
+				377C8D3D145765080039A6B5 /* NSDate+InternetDateTime.m in Sources */,
+				377C8D3E145765080039A6B5 /* MWFeedParserAppDelegate.m in Sources */,
+				377C8D3F145765080039A6B5 /* MWFeedParser.m in Sources */,
+				377C8D40145765080039A6B5 /* MWFeedItem.m in Sources */,
+				377C8D41145765080039A6B5 /* MWFeedInfo.m in Sources */,
+				377C8D42145765080039A6B5 /* GTMNSString+HTML.m in Sources */,
+				377C8D4C1457ACE00039A6B5 /* StoryViewController_iPhone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		374BE78F145069AE00DEFF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		374BE790145069AE00DEFF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		374BE792145069AE00DEFF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkeletonRSS-Prefix.pch";
+				INFOPLIST_FILE = "SkeletonRSS-Info.plist";
+				PRODUCT_NAME = SkeletonRSS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		374BE793145069AE00DEFF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkeletonRSS-Prefix.pch";
+				INFOPLIST_FILE = "SkeletonRSS-Info.plist";
+				PRODUCT_NAME = SkeletonRSS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		374BE773145069AD00DEFF84 /* Build configuration list for PBXProject "SkeletonRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374BE78F145069AE00DEFF84 /* Debug */,
+				374BE790145069AE00DEFF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		374BE791145069AE00DEFF84 /* Build configuration list for PBXNativeTarget "SkeletonRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374BE792145069AE00DEFF84 /* Debug */,
+				374BE793145069AE00DEFF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 374BE770145069AD00DEFF84 /* Project object */;
+}
